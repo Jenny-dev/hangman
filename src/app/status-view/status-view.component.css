@@ -1,0 +1,27 @@
+button{
+    background-color: #2271BF;
+    border-radius: 16px;
+    box-shadow: 0 14px 12px 0;
+    font-size: 3vw;
+    color: #FFFFFF;
+    text-align: center;
+    height: 5vw;
+}
+
+
+img{
+    height: 40%;
+    width: 40%;
+}
+
+.winText{
+    color: #90EE90;
+    white-space: pre-line;
+    font-size: 3vw;
+}
+
+.failText{
+    color:rgb(243, 101, 113);
+    white-space: pre-line;
+    font-size: 3vw;
+}

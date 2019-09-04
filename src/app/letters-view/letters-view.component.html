@@ -1,0 +1,6 @@
+
+<div [class]="disabledLetters.indexOf(letter) == -1 ? 'disabledLetter':'enabledLetter'" (click)="choose(letter)" *ngFor="let letter of letters">
+        <span class="dot">
+            {{letter}}
+        </span> 
+</div>

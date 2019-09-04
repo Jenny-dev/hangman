@@ -1,0 +1,9 @@
+
+<div>
+    <img [src]="images[this.id]">
+    <div [class]="id?'winText':'failText'">
+        {{texts[this.id]}}
+    </div>
+    <br>
+    <button (click)="playAgain()">AGAIN</button>
+</div>
