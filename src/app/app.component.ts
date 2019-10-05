@@ -31,16 +31,15 @@ export class AppComponent implements OnInit, OnDestroy{
   }
 
   ngOnInit():void{
-    this.subscription =this.moviesService.getJSON().subscribe(
+    this.subscription =this.moviesService.getMovies().subscribe(
       data => { 
-        this.movies = data;
         this.initGame();
      }, 
      error => console.log(error));
   }
 
   initGame():void{
-    let movieName = this.movies[Math.floor(Math.random() * this.movies.length)].title;
+    let movieName = this.moviesService.getRandMovie();
 
     this.movieWordsLetters = [];
     this.movieLetters = [];

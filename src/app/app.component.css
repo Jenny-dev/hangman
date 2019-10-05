@@ -3,9 +3,6 @@
     border-radius: 16px;
 }
 
-#underTop{
-    top: 10%;
-}
 
 #title{
     font-family: monospace;
@@ -38,7 +35,6 @@
 
 /* split screen to left-middle-right*/
 .split{
-    height: 90%;
     position: fixed;
     text-align: center;
 }
@@ -51,6 +47,7 @@
 .middleView{
     left: 25%;
     width: 50%;
+    height: 90%;
 }
 
 .rightView{
@@ -59,13 +56,11 @@
 }
 
 .middleTop{
-    top:0;
     height: 50%;
 }
 
 .middleBottom{
-      top:50%;
-      height: 50%;
+    height: 50%;
 }
 
 
@@ -82,11 +77,16 @@ span{
 .letter{
     border-bottom: 2px solid;
     display: inherit;
-    margin: 10px;
+    margin: 1vmin;
+    width: 3vmin;
+    font-size: 3vmin;
+}
+
+.letterSpace{
+    display: inherit;
     width: 3vw;
     font-size: 3vw;
 }
-
 
 .letterOpen{
     color: #2271BF;

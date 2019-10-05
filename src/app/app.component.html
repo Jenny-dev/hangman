@@ -19,16 +19,16 @@
       <div class="middleTop">
         <div class="words" *ngFor="let word of movieWordsLetters">
           <span>
-          <div [class]="initOpenLetters.indexOf(w) ==-1 && w != '*' ?'letter letterOpen':'letter'" *ngFor="let w of word">
+            <div [class]="initOpenLetters.indexOf(w) ==-1 && w != '*' ?'letter letterOpen':'letter'" *ngFor="let w of word">
 
             {{w=="*"?"&#160;":w}} 
           
-          </div>
+            </div>
+            <div class="letterSpace">{{"&#160;"}}</div>
           </span>
-          &nbsp;&nbsp;&nbsp;
         </div>
       </div>
-
+      
       <div class="middleBottom">
         <app-letters-view [disabledLetters]="chosenLetters" (chooseLetter)="gameEnded?'':openLetter($event)"></app-letters-view>
       </div>

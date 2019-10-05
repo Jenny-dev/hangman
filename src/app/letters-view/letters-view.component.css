@@ -13,12 +13,12 @@
 }
 
 .dot{
-    height: 5vw;
-    width: 5vw;
+    height: 5vmin;
+    width: 5vmin;
     background-color: #8080801a;
     border-radius: 50%;
     display: inline-block;
     vertical-align: middle;
-    line-height: 5vw;
-    font-size: 3vw;
+    line-height: 5vmin;
+    font-size: 3vmin;
   }
